@@ -3,7 +3,8 @@ import '../navbar.scss'
 
 const Logo = (props) => (
     <div className='logo'>
-        <img className={"logo"} src={props.logo} alt="logo"/>
+        <img src={props.logo} alt="logo"/>
+
     </div>
 );
 

@@ -1,15 +1,19 @@
 import React from 'react';
 import './App.scss';
-import PlantHealth from "./plant_health_container/plant_health/plant_health";
-import SoilMoisture from "./plant_health_container/soil_moisture/soil_moisture";
-import NavBar from "../navbar/navbar"
+import VitalsContainer from "./vitals_container/vitals_container.js"
+import WeatherContainer from "./weather_container/weather_container.js"
+import NavBar from "./navbar/navbar"
 
 function App() {
   return (
-<div className='flex_container'>
+<div className={'grid_container'}>
 <NavBar/>
-   <PlantHealth/>
-   <SoilMoisture/>
+<div className={'monitor_container'}>
+  <VitalsContainer/>
+  <WeatherContainer/>
+
+
+</div>
 </div>
   );
 }
