@@ -6,7 +6,7 @@
   font-weight: $Regular;
   background-color: $MainColor;
   width: 200px;
-  height: 100vh;
+  height: 100%;
 
 
     h1 {
@@ -19,17 +19,11 @@
   }
 }
 
-.all_navbar_items {
 
-  width: 100%;
-}
 
-.navbaritem{
-padding-left: 30px;
-padding-bottom: 20px;
-}
 
-.navbaritem:hover {
+
+.navbar_item:hover {
 
   background-color: $BackgroundColor;
 }
@@ -48,17 +42,30 @@ padding-bottom: 20px;
 padding: 50px;
 }
 
-.navSVG{
-  float: right;
-width: 2em;
-height: 2em;
-padding-right: 20px;
 
+ul {
+list-style-type: none;
+  display: block;
+  padding: 10px;
+  background-color: white;
+  li {
+    display: inline;
+    padding: 15px;
+    width: 100%;
+    color: $MainColor;
+  }
+}
+
+
+.navlink {
+  width: 2em;
+  height: 2em;
+  display: inline;
 }
 
 
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 1000px) {
   .sidebar {
 display: inline;
     width: 100%;
@@ -67,33 +74,35 @@ display: inline;
     h1 {
       font-size: 1.5em;
       color: $DefaultTextColor;
-
     }
+.navbar_item {
+  display: none;
 
+}
     div.content {margin-left: 0;}
   }
-  .navlink_item{
+
+  ul {
+    list-style-type: none;
     float: right;
-    margin: 0;
-    padding: 0px 20px 10px 20px;
-  }
-
-  .all_navbar_items {
-
-
+    padding: 10px;
+    background-color: $MainColor;
+    li {
+      display: inline;
+      padding: 15px;
+      width: 100%;
+      color: $MainColor;
+    }
   }
 
   .logo {
     float: left;
     width: 3em;
     height: 3em;
-    padding: 5px;
+    padding: 10px;
     padding-bottom: 25px;
   }
 
-  .divider {
-    display: none;
-  }
 
 }
 

@@ -1,16 +1,24 @@
 @import "../../fonts&colors";
 
 .weather_container {
-  height: 100%;
-
+  font-family: $MainFont;
+  font-weight: $SemiBold;
+  font-style: italic;
 }
 
 .current_conditions {
+  height: 20vh;
+h1 {
+  padding: 20px;
 
+}
   background-image: url("../../../assets/images/time_of_day_gradients/morning.jpg");
 }
 
 .storm_tracker {
-height: 400px;
+height: 60vh;
+  h1 {
+    padding: 20px;
+  }
   background-color: antiquewhite;
 }

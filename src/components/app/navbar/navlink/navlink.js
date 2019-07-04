@@ -3,7 +3,7 @@ import '../navbar.scss'
 
 const NavBar = (props) => (
 
-    <li className={"navbar_item"}><h2>{props.Title}</h2></li>
+    <li><a href={props.LinkTo}><img className={"navlink"} src={props.SVG} alt={"svglink"}/></a></li>
 
 );
 

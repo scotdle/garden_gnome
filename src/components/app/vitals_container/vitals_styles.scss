@@ -1,18 +1,29 @@
 @import "../../fonts&colors";
 
 .plant_health {
-
   background-color: white;
+height: 40vh;
+ h1{
+   padding: 20px;
+ }
 }
 
 .soil_moisture {
 
-  background-color: green;
-  height: 400px;
+  background-color: white;
+  height: 40vh;
+  h1{
+    padding: 20px;
+  }
 }
 
 .vitals_container {
     height: 100%;
+  font-family: $MainFont;
+  font-weight: $SemiBold;
+  font-style: italic;
+  text-align: center;
 
-  }
+
+}
 

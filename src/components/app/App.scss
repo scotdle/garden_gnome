@@ -1,12 +1,6 @@
 @import "../fonts&colors";
-
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, caption {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  outline: 0;
-  font-size: 100%;
-  vertical-align: baseline;
+.root {
+  height: 100%;
 }
 
 
@@ -15,27 +9,38 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   display: grid;
   grid-template-columns: 1fr 4fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-items: stretch;
-  align-items: stretch;background-color: $BackgroundColor;
-  height: 100%;
+  align-items: stretch;
+  background-color: $BackgroundColor;
+  height: 100vh;
+  grid-gap: 20px;
 }
 
 .monitor_container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
-  grid-column-gap: 20px;
-  grid-row-gap: 20px;
-  justify-items: stretch;
-  align-items: stretch;
+  grid-gap: 50px 30px;
+  padding: 50px;
 
 
 }
 
+@media screen and (max-width: 1293px) {
+  .monitor_container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-gap: 50px 50px;
 
-@media screen and (max-width: 700px) {
+
+  }
+
+}
+
+
+
+
+@media screen and (max-width: 1000px) {
 
   .grid_container {
     display: grid;
@@ -45,6 +50,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     grid-row-gap: 20px;
     align-items: stretch;
     background-color: $BackgroundColor;
+    height: 100%;
   }
 
   .monitor_container {
