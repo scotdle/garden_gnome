@@ -1,29 +1,106 @@
 @import "../../fonts&colors";
 
-.plant_health {
-  background-color: white;
-height: 40vh;
- h1{
-   padding: 20px;
- }
-}
-
-.soil_moisture {
-
-  background-color: white;
-  height: 40vh;
-  h1{
-    padding: 20px;
-  }
-}
 
 .vitals_container {
-    height: 100%;
   font-family: $MainFont;
   font-weight: $SemiBold;
   font-style: italic;
   text-align: center;
+  .vitals_header{
+    color: $MainColor;
+  }
+}
 
+.plant_health {
+  background-color: white;
+  h1{
+    padding: 20px;
+  }
 
 }
 
+.water_indicator {
+  font-weight: $ExtraBoldnBlack;
+  font-style: normal;
+  font-size: 2vw;
+  padding: 0px 20px 20px 20px;
+
+}
+
+.leaf_indicator {
+  display: block;
+  margin: 0 auto;
+  width: 5vw;
+  height: 5vw;
+}
+
+
+.soil_moisture {
+
+  background-color: white;
+  h1{
+    padding-top: 20px;
+  }
+
+}
+
+
+.moisture_number {
+
+  font-style: italic;
+  font-weight: $SemiBold;
+  font-size: 8vw;
+  margin: 0;
+  padding-bottom: 30px;
+
+}
+
+
+
+@media screen and (max-width: 1293px) {
+
+  .leaf_indicator {
+
+    width: 15vw;
+    height: 15vw;
+  }
+
+}
+
+.water_indicator {
+
+  font-size: 2vw;
+}
+
+.moisture_number {
+
+  font-style: italic;
+  font-weight: $SemiBold;
+  font-size: 8vw;
+  margin: 0;
+
+}
+
+
+@media screen and (max-width: 1000px) {
+
+  .leaf_indicator {
+
+    width: 15vw;
+    height: 15vw;
+  }
+
+  .water_indicator {
+
+    font-size: 6vw;
+  }
+
+  .moisture_number {
+
+    font-style: italic;
+    font-weight: $SemiBold;
+    font-size: 15vw;
+    margin: 0;
+
+  }
+}

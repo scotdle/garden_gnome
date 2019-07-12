@@ -17,8 +17,8 @@ const NavBar = () => (
         <ul>
             <NavBarItem Title={'currently watching over a tomato plant.'} />
 <div className={'navlinks'}>
-        <NavLink LinkTo={"#home"} SVG={SClogo}/>
-        <NavLink LinkTo={"#home"} SVG={GitHub}/>
+        <NavLink LinkTo={"https://scooterc.co"} SVG={SClogo}/>
+        <NavLink LinkTo={"https://github.com/scotdle"} SVG={GitHub}/>
 </div>
         </ul>
 

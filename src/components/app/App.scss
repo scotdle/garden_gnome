@@ -1,6 +1,9 @@
 @import "../fonts&colors";
-.root {
-  height: 100%;
+
+#root {
+
+  display: grid;
+  height: 100vh;
 }
 
 
@@ -11,8 +14,7 @@
   grid-template-rows: 1fr;
   align-items: stretch;
   background-color: $BackgroundColor;
-  height: 100vh;
-  grid-gap: 20px;
+  height: 100%;
 }
 
 .monitor_container {
@@ -20,7 +22,7 @@
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
   grid-gap: 50px 30px;
-  padding: 50px;
+  padding: 30px;
 
 
 }
@@ -29,7 +31,7 @@
   .monitor_container {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr auto;
     grid-gap: 50px 50px;
 
 
@@ -40,17 +42,16 @@
 
 
 
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1024px) {
 
   .grid_container {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    grid-template-rows: 1fr auto;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
     align-items: stretch;
     background-color: $BackgroundColor;
-    height: 100%;
   }
 
   .monitor_container {
@@ -58,11 +59,10 @@
     grid-template-columns: 1fr;
     grid-column-gap: 20px;
     grid-row-gap: 20px;
-    justify-items: stretch;
-    align-items: stretch;
+    padding: 15px;
 
   }
 
 
-h1{ font-size: 5vh;}
+h1{ font-size: 6vw;}
 }

@@ -3,11 +3,11 @@
 .weather_container {
   font-family: $MainFont;
   font-weight: $SemiBold;
-  font-style: italic;
+
 }
 
 .current_conditions {
-  height: 20vh;
+  font-style: italic;
 h1 {
   padding: 20px;
 
@@ -16,9 +16,28 @@ h1 {
 }
 
 .storm_tracker {
-height: 60vh;
+  background-color: white;
+  font-style: italic;
+
+  .rain_percentage, .storm_miles {
+    text-align: center;
+    font-style: italic;
+  }
+.rain_percentage {
+font-weight: $ExtraBoldnBlack;
+  font-size: 6vw;
+  margin: 0;
+
+}
+
+  .storm_miles {
+font-weight: $SemiBold;
+font-style: italic;
+font-size: 4vw;
+color: $WaterText;
+
+  }
   h1 {
     padding: 20px;
   }
-  background-color: antiquewhite;
 }

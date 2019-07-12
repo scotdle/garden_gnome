@@ -3,7 +3,6 @@ import './App.scss';
 import VitalsContainer from "./vitals_container/vitals_container.js"
 import WeatherContainer from "./weather_container/weather_container.js"
 import NavBar from "./navbar/navbar"
-
 function App() {
   return (
 <div className={'grid_container'}>
