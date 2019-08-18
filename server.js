@@ -17,8 +17,6 @@ app.get('/getDarkSkyData', (req, res) => {
     const darkSkyEndpoint = "https://api.darksky.net/forecast/";
     const darkSkyKey = process.env.DARK_SKY_API_KEY;
     const charlotteCoordinates = "/35.2271, -80.8431";
-
-
     const darkSkyURL = darkSkyEndpoint + darkSkyKey + charlotteCoordinates;
 
     fetch(darkSkyURL)

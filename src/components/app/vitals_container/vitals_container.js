@@ -20,7 +20,7 @@ class VitalsContainer extends React.Component {
     }
 
     randomNumber(){
-        /*setInterval(function(){
+       setInterval(function(){
             let randomMoisture = (Math.floor((Math.random()*1030)+1));
             this.setState({soilMoisture: randomMoisture});
 
@@ -37,7 +37,7 @@ class VitalsContainer extends React.Component {
 
             }
 
-        }.bind(this), 1000); */
+        }.bind(this), 3000);
 }
     render() {
       return  (

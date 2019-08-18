@@ -2,26 +2,70 @@
 
 .weather_container {
   font-family: $MainFont;
-  font-weight: $SemiBold;
+  font-weight: $ExtraBoldnBlack;
 
 }
 
 .current_conditions {
+  overflow: hidden;
   font-style: italic;
-h1 {
-  padding: 20px;
+  padding: 10px;
+
+  h1{
+    padding:0;
+    margin: 0;
+  }
 
 }
-  background-image: url("../../../assets/images/time_of_day_gradients/morning.jpg");
+
+.weather_message {
+position: relative;
+  top: 40px;
+  width: 60%;
+  font-weight: $SemiBold;
+float: left;
+  font-size: 2vw;
+p {
+  margin: 0;
+}
+
+}
+
+.current_temp {
+  width: 50%;
+  position: relative;
+  float: right;
+  font-size: 4vw;
+text-align: center;
+  bottom: 20px;
+  .current_humidity {
+    font-size: 3.5vw;
+
+  }
+
+
+  h2 {
+    margin: 0;
+    display: inline-block;
+  }
+
+
+
 }
 
 .storm_tracker {
+
+
   background-color: white;
   font-style: italic;
+
+}
+
 
   .rain_percentage, .storm_miles {
     text-align: center;
     font-style: italic;
+    padding: 10px;
   }
 .rain_percentage {
 font-weight: $ExtraBoldnBlack;
@@ -40,4 +84,60 @@ color: $WaterText;
   h1 {
     padding: 20px;
   }
+
+
+
+@media screen and (max-width: 1024px) {
+
+  .current_conditions {
+
+    text-align: center;
+
+  }
+
+  .storm_tracker {
+
+    text-align: center;
+
+  }
+
+  .weather_message {
+    top: 0px;
+    width: 100%;
+    float: none;
+    font-size: 7vw;
+
+  }
+
+  .current_temp {
+bottom: 0px;
+    float: none;
+    width: 100%;
+    padding-right: 0px;
+    font-size: 7vw;
+
+    h2 {
+      margin: 0;
+      display: inline-block;
+    }
+.current_humidity {
+  font-size: 7vw;
+}
+
+
+  }
+
+  .rain_percentage {
+
+    font-size: 8vw;
+
+
+  }
+
+  .storm_miles {
+    margin-top: 3px;
+    font-size: 7vw;
+
+  }
+
 }
