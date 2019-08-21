@@ -29,10 +29,13 @@ class WeatherContainer extends React.Component {
 
 
     async stormTracker() {
-        const response = await fetch('/getDarkSkyData');
+        const response = await fetch('http://localhost:8888/.netlify/functions/api_functions');
         const DarkSky = await response.json();
-        const currently = DarkSky.DarkSkyData.currently;
-       const daily = DarkSky.DarkSkyData.daily.data[0];
+        console.log(DarkSky);
+
+
+        const currently = DarkSky.getWeather.currently;
+       const daily = DarkSky.getWeather.daily.data[0];
 
        let tempRightNow = currently.apparentTemperature;
        let humidityRightNow = currently.humidity;
@@ -43,8 +46,6 @@ class WeatherContainer extends React.Component {
         tempRightNow =    Math.round(tempRightNow);
         humidityRightNow = (humidityRightNow * 100).toFixed(0);
 
-
-        console.log(DarkSky);
         console.log(currently);
         console.log(stormMiles);
         this.setState({

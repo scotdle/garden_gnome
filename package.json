@@ -15,14 +15,13 @@
     "serve": "^11.1.0"
   },
   "scripts": {
-    "start": "serve -s build",
+    "start": "react-scripts start",
     "dev": "concurrently \"react-scripts start\" \"node server\"",
-    "build": "concurrently \"react-scripts build\" \"node server\"",
+    "build": "react-scripts build",
+    "build:lambda": "netlify-lambda build src/api_functions",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "heroku-postbuild": "npm run build && npm start"
+    "eject": "react-scripts eject"
   },
-  "proxy": "http://localhost:5000/",
   "eslintConfig": {
     "extends": "react-app"
   },
