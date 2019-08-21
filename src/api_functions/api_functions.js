@@ -6,7 +6,7 @@ exports.handler = async (event) => {
 
 
         const darkSkyEndpoint = "https://api.darksky.net/forecast/";
-        const darkSkyKey = '37599ff56bd41dca1fb2c2ffc39c977e';
+        const darkSkyKey = process.env.DARK_SKY_KEY;
         const charlotteCoordinates = "/35.2271,-80.8431";
         const exclude = '?flags';
         const darkSkyURL = darkSkyEndpoint + darkSkyKey + charlotteCoordinates + exclude;
