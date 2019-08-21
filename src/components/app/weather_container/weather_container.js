@@ -29,7 +29,7 @@ class WeatherContainer extends React.Component {
 
 
     async stormTracker() {
-        const response = await fetch('http://localhost:8888/.netlify/functions/api_functions');
+        const response = await fetch('.netlify/functions/api_functions');
         const DarkSky = await response.json();
         console.log(DarkSky);
 
